@@ -1,0 +1,560 @@
+fileFormatVersion: 2
+guid: 3e43acb80c5ac4a59a7f9bd8975f6768
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6558004592305426800
+    second: fishWait_0
+  - first:
+      213: -7375231241028123304
+    second: fishWait_1
+  - first:
+      213: -3347479666204773975
+    second: fishWait_2
+  - first:
+      213: -3760838866248998603
+    second: fishWait_3
+  - first:
+      213: -5469375100534742276
+    second: fishWait_4
+  - first:
+      213: 4025049004887847521
+    second: fishWait_5
+  - first:
+      213: -5516060453560368257
+    second: fishWait_6
+  - first:
+      213: 8321757297053172380
+    second: fishWait_7
+  - first:
+      213: -1015288168556453431
+    second: fishWait_8
+  - first:
+      213: -4955544444882607803
+    second: fishWait_9
+  - first:
+      213: -3269731533585549920
+    second: fishWait_10
+  - first:
+      213: -8989708624955919344
+    second: fishWait_11
+  - first:
+      213: 9089926519496219811
+    second: fishWait_12
+  - first:
+      213: 4113959828385019007
+    second: fishWait_13
+  - first:
+      213: 3423554995255368488
+    second: fishWait_14
+  - first:
+      213: 8131173544127729479
+    second: fishWait_15
+  - first:
+      213: -7419282011884158975
+    second: fishWait_0
+  - first:
+      213: 3920216221139259625
+    second: fishWait_1
+  - first:
+      213: -1368727609367241640
+    second: fishWait_2
+  - first:
+      213: 846981678653852630
+    second: fishWait_3
+  - first:
+      213: -3338602260213108922
+    second: fishWait_4
+  - first:
+      213: -5011154414019952377
+    second: fishWait_5
+  - first:
+      213: 729134655683130430
+    second: fishWait_6
+  - first:
+      213: 2663004208752018875
+    second: fishWait_7
+  - first:
+      213: 8685183132022726177
+    second: fishWait_8
+  - first:
+      213: -6880842096666200272
+    second: fishWait_9
+  - first:
+      213: 7873011829115597033
+    second: fishWait_10
+  - first:
+      213: 2259194867585275375
+    second: fishWait_11
+  - first:
+      213: 2670451807954249103
+    second: fishWait_12
+  - first:
+      213: 5523518180051119899
+    second: fishWait_13
+  - first:
+      213: 1641217913382215177
+    second: fishWait_14
+  - first:
+      213: -8280108773603130511
+    second: fishWait_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fishWait_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2790
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1000339b15a690990800000000000000
+      internalID: -7419282011884158975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_1
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 2790
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0dab702e7676630800000000000000
+      internalID: 3920216221139259625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_2
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 2790
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c5569bd7d410de0800000000000000
+      internalID: -1368727609367241640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_3
+      rect:
+        serializedVersion: 2
+        x: 4068
+        y: 2790
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db4d67695511cb00800000000000000
+      internalID: 846981678653852630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1860
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f6ea9dee6eaa1d0800000000000000
+      internalID: -3338602260213108922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_5
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 1860
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701c5b55c9dc47ab0800000000000000
+      internalID: -5011154414019952377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_6
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 1860
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e347b613b186e1a00800000000000000
+      internalID: 729134655683130430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_7
+      rect:
+        serializedVersion: 2
+        x: 4068
+        y: 1860
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5c80af734e4f420800000000000000
+      internalID: 2663004208752018875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 930
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12edd61ea08f78870800000000000000
+      internalID: 8685183132022726177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_9
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 930
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03738a0c1965280a0800000000000000
+      internalID: -6880842096666200272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_10
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 930
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e032eaab8e824d60800000000000000
+      internalID: 7873011829115597033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_11
+      rect:
+        serializedVersion: 2
+        x: 4068
+        y: 930
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe55ec823c54a5f10800000000000000
+      internalID: 2259194867585275375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85a9ea45c95f0520800000000000000
+      internalID: 2670451807954249103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_13
+      rect:
+        serializedVersion: 2
+        x: 1356
+        y: 0
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1feb58158a77ac40800000000000000
+      internalID: 5523518180051119899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_14
+      rect:
+        serializedVersion: 2
+        x: 2712
+        y: 0
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e97262ff6c6c610800000000000000
+      internalID: 1641217913382215177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fishWait_15
+      rect:
+        serializedVersion: 2
+        x: 4068
+        y: 0
+        width: 1356
+        height: 930
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1734ac7b0f4271d80800000000000000
+      internalID: -8280108773603130511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
