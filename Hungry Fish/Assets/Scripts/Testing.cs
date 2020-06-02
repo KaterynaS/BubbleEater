@@ -7,11 +7,11 @@ public class Testing : MonoBehaviour
 
     private void Awake()
     {
-        LevelSystem levelSystem = new LevelSystem();
-        Debug.Log("current level: " + levelSystem.getLevel());
-        levelSystem.AddExperience(55);
-        Debug.Log("current level: " + levelSystem.getLevel());
-        levelSystem.AddExperience(55);
-        Debug.Log("current level: " + levelSystem.getLevel());
+        //LevelSystem levelSystem = new LevelSystem();
+        //Debug.Log("current level: " + levelSystem.getLevel());
+        //levelSystem.AddExperience(55);
+        //Debug.Log("current level: " + levelSystem.getLevel());
+        //levelSystem.AddExperience(55);
+        //Debug.Log("current level: " + levelSystem.getLevel());
     }
 }

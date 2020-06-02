@@ -16,13 +16,14 @@ public class fish : MonoBehaviour
 
     private bool isThereFood;
 
-    public int fishNumber;
+    private int fishNumber;
 
     private float timeBtwRandomMoves;
     public float startTimeBtwRandomMoves;
 
     Vector3 pointB = new Vector3(15, 15, 0);
 
+    private int currentLevel;
     private int bubblesEatenOnCurrentLevel = 0;
     private int bubblesPerCurrentLevel = 10;
 
@@ -30,23 +31,29 @@ public class fish : MonoBehaviour
 
     Animator animator;
 
+    public GameObject WinPanel;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         animator.SetBool("isIdle", true);
         levelProgressBar.setBubblesPerCurrentLevel(bubblesPerCurrentLevel);
 
-        Debug.Log("Start: progress");
+        //Debug.Log("Start: progress");
 
-        string a = GameObject.FindGameObjectWithTag("fishNumberText").GetComponentInChildren<TMP_Text>().text.ToString();
-
-        Debug.Log("Start: fish number text: " + a);
-
-        string fn = "" + fishNumber;
-        GameObject.FindGameObjectWithTag("fishNumberText").GetComponentInChildren<TMP_Text>().SetText(fn);
-
+        setFishNumber(fishNumber);
     }
 
+
+    public void setFishNumber(int number)
+    {
+        string a = GameObject.FindGameObjectWithTag("fishNumberText").GetComponentInChildren<TMP_Text>().text.ToString();
+
+        //Debug.Log("Start: fish number text: " + a);
+
+        string fn = "" + number;
+        GameObject.FindGameObjectWithTag("fishNumberText").GetComponentInChildren<TMP_Text>().SetText(fn);
+    }
 
     void Update()
     {
@@ -139,9 +146,11 @@ public class fish : MonoBehaviour
         bubblesEatenOnCurrentLevel++;
 
 
-        //Debug.Log("bubblesEatenOnCurrentLevel = " + bubblesEatenOnCurrentLevel);
 
         levelProgressBar.setBubblesEatenSlider(bubblesEatenOnCurrentLevel);
+
+
+        Debug.Log("bubblesEatenOnCurrentLevel = " + bubblesEatenOnCurrentLevel + " from " + bubblesPerCurrentLevel);
 
         if (bubblesEatenOnCurrentLevel >= bubblesPerCurrentLevel)
         {
@@ -156,6 +165,13 @@ public class fish : MonoBehaviour
         //change bubblesPerCurrentLevel
         //change bubbles varaety
         //
+
+
+        //greeting actions
+        //go to next lvl or lvl select?
+
+        WinPanel.SetActive(true);
+
     }
 
 

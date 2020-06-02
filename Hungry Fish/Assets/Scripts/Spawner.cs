@@ -13,15 +13,14 @@ public class Spawner : MonoBehaviour
 
     public GameObject bubblePrefab;
 
-    public int minNumberOnBubble;
-    public int maxNumberOnBubble;
+    private int minNumberOnBubble;
+    private int maxNumberOnBubble;
     private int numberOnBubble;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -47,4 +46,19 @@ public class Spawner : MonoBehaviour
             timeBtwSpawns -= Time.deltaTime;
         }
     }
+
+
+
+    public void setMinNumberOnBubble(int minBubbleNumber)
+    {
+        minNumberOnBubble = minBubbleNumber;
+    }
+
+
+    public void setMaxNumberOnBubble(int maxBubbleNumber)
+    {
+        maxNumberOnBubble = maxBubbleNumber;
+    }
+
+
 }

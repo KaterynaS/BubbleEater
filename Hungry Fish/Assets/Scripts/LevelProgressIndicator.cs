@@ -18,7 +18,7 @@ public class LevelProgressIndicator : MonoBehaviour
 
     public void setBubblesEatenSlider(int bubblesEaten)
     {
-        Debug.Log("set bubbles eaten = " + bubblesEaten);
+        //Debug.Log("set bubbles eaten = " + bubblesEaten);
         bubblesEatenSlider.value = bubblesEaten;
     }
 }

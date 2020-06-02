@@ -3368,7 +3368,7 @@ ScriptedImporter:
     uvTransform: {x: 210, y: 618}
   - name: body
     originalName: 
-    pivot: {x: 0.043555964, y: 0.50000006}
+    pivot: {x: 0.54892635, y: 0.4913928}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
