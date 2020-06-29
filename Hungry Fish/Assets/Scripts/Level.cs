@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level : MonoBehaviour
+public class Level
 {
     private string levelName;
 
@@ -12,12 +12,14 @@ public class Level : MonoBehaviour
     private int targetNumber;
     //bubbles to generate, for now min and max numbers on bubbles
     private int[] bubblesRange;
+    private LevelBubble[] levelBubbles;
 
-    public Level(string level, int targetNum, int[] bubblesInRange)
+    public Level(string level, int targetNum, int[] bubblesInRange, LevelBubble[] levelBubblesArray)
     {
         levelName = level;
         targetNumber = targetNum;
         bubblesRange = bubblesInRange;
+        levelBubbles = levelBubblesArray;
     }
 
     public string getLevelName()
@@ -35,5 +37,11 @@ public class Level : MonoBehaviour
         return bubblesRange;
     }
 
+    public LevelBubble[] getLevelBubbles()
+    {
+        return levelBubbles;
+    }
+
 
 }
+

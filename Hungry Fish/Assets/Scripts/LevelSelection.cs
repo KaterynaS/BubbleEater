@@ -16,7 +16,7 @@ public class LevelSelection : MonoBehaviour
         {
             if (i + 2 > levelAt)
             {
-                levelButtons[i].interactable = false;
+                //levelButtons[i].interactable = false;
             }
         }
     }

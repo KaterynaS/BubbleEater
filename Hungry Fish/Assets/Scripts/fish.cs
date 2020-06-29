@@ -25,7 +25,7 @@ public class fish : MonoBehaviour
 
     private int currentLevel;
     private int bubblesEatenOnCurrentLevel = 0;
-    private int bubblesPerCurrentLevel = 10;
+    private int bubblesPerCurrentLevel = 3;
 
     public LevelProgressIndicator levelProgressBar;
 
@@ -33,15 +33,17 @@ public class fish : MonoBehaviour
 
     public GameObject WinPanel;
 
+    AudioSource audioSource;
+
+    GameState gameState;
+
     void Start()
     {
+        gameState = GameState.GetInstance();
+        audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         animator.SetBool("isIdle", true);
         levelProgressBar.setBubblesPerCurrentLevel(bubblesPerCurrentLevel);
-
-        //Debug.Log("Start: progress");
-
-        setFishNumber(fishNumber);
     }
 
 
@@ -49,7 +51,7 @@ public class fish : MonoBehaviour
     {
         string a = GameObject.FindGameObjectWithTag("fishNumberText").GetComponentInChildren<TMP_Text>().text.ToString();
 
-        //Debug.Log("Start: fish number text: " + a);
+        Debug.Log("fish " + "setFishNumber: " + number);
 
         string fn = "" + number;
         GameObject.FindGameObjectWithTag("fishNumberText").GetComponentInChildren<TMP_Text>().SetText(fn);
@@ -74,25 +76,18 @@ public class fish : MonoBehaviour
 
             xDiff = transform.position.x - target.position.x;
 
-
             if (xDiff > 0)
             {
                 transform.eulerAngles = new Vector3(0, 0, 0);
-                //GameObject.FindGameObjectWithTag("fishNumberText").transform.eulerAngles = new Vector3(0, 0, 0);
-
-
             }
             else if (xDiff < 0)
             {
                 transform.eulerAngles = new Vector3(0, 180, 0);
-                //GameObject.FindGameObjectWithTag("fishNumberText").transform.eulerAngles = new Vector3(0, 0, 0);
-
             }
         }
 
         else
         {
-
             animator.SetBool("isEating", false);
             animator.SetBool("isMoving", false);
             animator.SetBool("isIdle", true);
@@ -128,16 +123,14 @@ public class fish : MonoBehaviour
         }
     }
 
-
     public void setIsThereFood(bool a)
     {
         isThereFood = a;
     }
 
-
     public void eat()
     {
-
+        if (gameState.isSoundOn()) {audioSource.Play(); }
         animator.SetBool("isEating", true);
         animator.SetBool("isMoving", false);
         animator.SetBool("isIdle", false);
@@ -145,10 +138,7 @@ public class fish : MonoBehaviour
         //todo eat animation
         bubblesEatenOnCurrentLevel++;
 
-
-
         levelProgressBar.setBubblesEatenSlider(bubblesEatenOnCurrentLevel);
-
 
         Debug.Log("bubblesEatenOnCurrentLevel = " + bubblesEatenOnCurrentLevel + " from " + bubblesPerCurrentLevel);
 
@@ -160,23 +150,9 @@ public class fish : MonoBehaviour
 
     private void levelUp()
     {
-        //todo
-        //currentLvl++;
-        //change bubblesPerCurrentLevel
-        //change bubbles varaety
-        //
-
-
-        //greeting actions
-        //go to next lvl or lvl select?
-
         WinPanel.SetActive(true);
 
+        Spawner spawner = GameObject.Find("Spawner").GetComponent<Spawner>();
+        spawner.setIsGameGoing(false);
     }
-
-
-}
-
-class ArrayList<T>
-{
 }

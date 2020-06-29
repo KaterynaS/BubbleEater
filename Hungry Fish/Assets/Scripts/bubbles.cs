@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class bubbles : MonoBehaviour
@@ -16,24 +17,29 @@ public class bubbles : MonoBehaviour
     public GameObject rightBubblePrefab;
     public GameObject bubblePrefab;
 
-    fish fishScript;
+    private fish fishScript;
 
     public GameObject bubbleBurst;
     int fishNum;
 
+    GameState gameState;
+
     // Start is called before the first frame update
     void Start()
     {
+        gameState = GameState.GetInstance();
         speed = Random.Range(minSpeed, maxSpeed);
         fishScript = GameObject.FindGameObjectWithTag("fish").GetComponent<fish>();
-        string a = GameObject.FindGameObjectWithTag("fishNumberText").GetComponentInChildren<TMP_Text>().text.ToString();
-        fishNum = int.Parse(a);
+        //string a = GameObject.FindGameObjectWithTag("fishNumberText").GetComponentInChildren<TMP_Text>().text.ToString();
+        //fishNum = int.Parse(a);
+
+        Level currentLevel = LevelsDescription.getLevelDescription(gameState.getCurrentLevel());
+        fishNum = currentLevel.getFishTargetNumber();
     }
 
     // Update is called once per frame
     void Update()
     {
-       
         if (isBeingHeld == true)
         {
             Vector3 mousePos;
@@ -45,6 +51,7 @@ public class bubbles : MonoBehaviour
 
         else
         {
+            Debug.Log("bubbles, Update " + "move up");
             transform.Translate(Vector2.up * speed * Time.deltaTime);
         }
     }
@@ -70,25 +77,33 @@ public class bubbles : MonoBehaviour
 
         if (collision.tag == "bubble" && isBeingHeld == true && gameObject.tag == "bubble")
         {
+            Debug.Log("bubbles, OnTriggerEnter2D " + "collision.tag = " + collision.tag + " gameObject.tag = " + gameObject.tag);
+            //int a = int.Parse(collision.GetComponentInChildren<TextMeshProUGUI>().text.ToString());
+            //int b = int.Parse(gameObject.GetComponentInChildren<TextMeshProUGUI>().text.ToString());
 
-            //Debug.Log("should merge");
-            int a = int.Parse(collision.GetComponentInChildren<TextMeshPro>().text.ToString());
-            int b = int.Parse(gameObject.GetComponentInChildren<TextMeshPro>().text.ToString());
+            int a = int.Parse(collision.GetComponentInChildren<Text>().text.ToString());
+            int b = int.Parse(gameObject.GetComponentInChildren<Text>().text.ToString());
 
             int summ = a + b;
 
             string newNum = "" + summ;
 
-
             if (summ == fishNum)
             {
-                rightBubblePrefab.GetComponentInChildren<TextMeshPro>().SetText(newNum);
+                rightBubblePrefab.GetComponentInChildren<Text>().text = newNum;
                 Instantiate(rightBubblePrefab, transform.position, Quaternion.identity);
             }
             else
             {
-                bubblePrefab.GetComponentInChildren<TextMeshPro>().SetText(newNum);
-                Instantiate(bubblePrefab, transform.position, Quaternion.identity);
+                if (summ > fishNum)
+                {
+                    Instantiate(bubbleBurst, collision.transform.position, Quaternion.identity);
+                }
+                else
+                {
+                    bubblePrefab.GetComponentInChildren<Text>().text = newNum;
+                    Instantiate(bubblePrefab, transform.position, Quaternion.identity);
+                }
             }
 
             Destroy(collision.gameObject);
